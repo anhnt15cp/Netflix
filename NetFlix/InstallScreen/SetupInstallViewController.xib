@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SetupInstallViewController" customModule="NetFlix" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mf9-Js-DPF">
+                    <rect key="frame" x="20" y="44" width="374" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="rk7-sE-dT0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="tintColor" red="0.94117647410000005" green="0.93725490570000003" blue="0.94901961089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="       Tải xuống thông minh" image="chevron.left" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                    </state>
+                    <connections>
+                        <action selector="backButton:" destination="-1" eventType="touchUpInside" id="fdm-kq-6vB"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quá trình  tải xuống chỉ diễn ra khi bạn kết nổi Wi-Fi" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3YN-em-FRh">
+                    <rect key="frame" x="20" y="118" width="374" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="WOU-7p-pEK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chúng tôi sẽ tải tập tiếp theo của chương trình bạn đã tải xuống và xóa những tập bạn đã xem" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CH1-6M-EE0">
+                    <rect key="frame" x="20" y="182" width="374" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="sv4-gS-ak8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chúng tôi sẽ tìm các bộ phim và chương trình mà bạn có thể sẽ thích và lưu chúng trên thiết bị của bạn" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Dg-eG-kBI">
+                    <rect key="frame" x="20" y="335" width="374" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="lhH-uA-PJr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OiH-Kr-ac2">
+                    <rect key="frame" x="182.5" y="435" width="51" height="31"/>
+                    <color key="tintColor" red="0.43137252329999998" green="0.54901963470000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="onTintColor" systemColor="tintColor"/>
+                </switch>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ynm-YV-S7x">
+                    <rect key="frame" x="182.5" y="284" width="51" height="31"/>
+                    <color key="tintColor" red="0.43137252329999998" green="0.54901963470000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="onTintColor" systemColor="tintColor"/>
+                </switch>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="labelColor"/>
+            <constraints>
+                <constraint firstItem="Mf9-Js-DPF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="1ZC-bD-mob"/>
+                <constraint firstItem="Ynm-YV-S7x" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="182.5" id="8s5-FG-uoR"/>
+                <constraint firstItem="OiH-Kr-ac2" firstAttribute="top" secondItem="6Dg-eG-kBI" secondAttribute="bottom" constant="20" id="9lb-cg-Zej"/>
+                <constraint firstItem="Ynm-YV-S7x" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ID9-ra-Xso"/>
+                <constraint firstItem="OiH-Kr-ac2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Igs-RT-DxH"/>
+                <constraint firstItem="Mf9-Js-DPF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="JMl-O0-n1b"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ynm-YV-S7x" secondAttribute="trailing" constant="182.5" id="K18-mZ-XIc"/>
+                <constraint firstItem="OiH-Kr-ac2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="182.5" id="KYb-uW-us5"/>
+                <constraint firstItem="Ynm-YV-S7x" firstAttribute="top" secondItem="CH1-6M-EE0" secondAttribute="bottom" constant="22" id="LKE-Jj-rzJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CH1-6M-EE0" secondAttribute="trailing" constant="20" id="Qes-GU-fwW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Mf9-Js-DPF" secondAttribute="trailing" constant="20" id="TWB-Hw-29K"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3YN-em-FRh" secondAttribute="trailing" constant="20" id="Yg7-y5-0J9"/>
+                <constraint firstItem="3YN-em-FRh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Ymj-j9-1Tt"/>
+                <constraint firstItem="6Dg-eG-kBI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="bC6-BH-fZC"/>
+                <constraint firstItem="6Dg-eG-kBI" firstAttribute="top" secondItem="Ynm-YV-S7x" secondAttribute="bottom" constant="20" id="i3e-GO-KMW"/>
+                <constraint firstItem="CH1-6M-EE0" firstAttribute="top" secondItem="3YN-em-FRh" secondAttribute="bottom" constant="20" id="mgb-vK-7q3"/>
+                <constraint firstItem="CH1-6M-EE0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="pAD-lP-zWS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6Dg-eG-kBI" secondAttribute="trailing" constant="20" id="vhy-s0-SV3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OiH-Kr-ac2" secondAttribute="trailing" constant="182.5" id="vvV-Ov-tGv"/>
+                <constraint firstItem="3YN-em-FRh" firstAttribute="top" secondItem="Mf9-Js-DPF" secondAttribute="bottom" constant="30" id="y8S-EA-TSU"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="77.678571428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

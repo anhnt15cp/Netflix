@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InstallViewController" customModule="NetFlix" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="JyY-qQ-eXp" id="E1K-f0-OuP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="install1" translatesAutoresizingMaskIntoConstraints="NO" id="F91-9z-zV3">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tệp tải xuống" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZa-70-bPj">
+                    <rect key="frame" x="20" y="44" width="250" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="AuF-nh-LvF"/>
+                        <constraint firstAttribute="width" constant="250" id="tfE-yj-JNb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="italicSystem" pointSize="38"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRW-5l-ksm">
+                    <rect key="frame" x="20" y="108" width="211.5" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="40i-2a-h6j"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="    Tải xuống thông minh" image="arrow.down.heart" catalog="system">
+                        <color key="titleColor" systemColor="systemRedColor"/>
+                    </state>
+                    <connections>
+                        <action selector="setupInstall:" destination="-1" eventType="touchUpInside" id="Wfx-qD-Df4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYs-Yh-Ogz">
+                    <rect key="frame" x="300" y="44" width="82" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="zE9-2R-ckH"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="magnifyingglass" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                    </state>
+                    <connections>
+                        <action selector="sreachMovie:" destination="-1" eventType="touchUpInside" id="C95-dZ-IkT"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYB-nS-2G7">
+                    <rect key="frame" x="10" y="356" width="394" height="184"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="394" id="6w6-Gi-gGz"/>
+                        <constraint firstAttribute="height" constant="184" id="ghh-l8-1KY"/>
+                    </constraints>
+                    <string key="text">Chúng tôi sẽ tải xuống một loạt phim và chuong trình được tuyển chọn riêng cho bạn , sao cho bạn luôn có nội dung nào đó để xem trên thiết bị của mình</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpt-6c-bgM">
+                    <rect key="frame" x="20" y="654" width="374" height="50"/>
+                    <color key="backgroundColor" red="0.94509804249999996" green="0.93725490570000003" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="VBn-v1-Fbs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Xem bạn có thể tải xuống những gì">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="whatInstall:" destination="-1" eventType="touchUpInside" id="lxQ-nR-qSR"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="who2" translatesAutoresizingMaskIntoConstraints="NO" id="JyY-qQ-eXp">
+                    <rect key="frame" x="300" y="108" width="69" height="35"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="69" id="rj6-W3-3am"/>
+                        <constraint firstAttribute="height" constant="35" id="syf-SX-Vn0"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="CZa-70-bPj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="1oT-XK-QeB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="F91-9z-zV3" secondAttribute="bottom" id="4g3-hW-qVV"/>
+                <constraint firstItem="dYs-Yh-Ogz" firstAttribute="leading" secondItem="CZa-70-bPj" secondAttribute="trailing" constant="30" id="5Q0-UQ-h7H"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JyY-qQ-eXp" secondAttribute="trailing" constant="45" id="7dL-Gh-jV8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cpt-6c-bgM" secondAttribute="bottom" constant="158" id="8Oq-jZ-Hks"/>
+                <constraint firstItem="F91-9z-zV3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="D4l-zH-ReC"/>
+                <constraint firstItem="cpt-6c-bgM" firstAttribute="top" secondItem="XYB-nS-2G7" secondAttribute="bottom" constant="114" id="Lcf-3o-DJX"/>
+                <constraint firstItem="XYB-nS-2G7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="M6L-WI-hBV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XYB-nS-2G7" secondAttribute="trailing" constant="10" id="OQG-Yq-POh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KRW-5l-ksm" secondAttribute="trailing" constant="182.5" id="Sko-5m-Mbh"/>
+                <constraint firstItem="dYs-Yh-Ogz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ZqI-Fr-GLz"/>
+                <constraint firstItem="JyY-qQ-eXp" firstAttribute="top" secondItem="dYs-Yh-Ogz" secondAttribute="bottom" constant="13" id="fer-GQ-hEe"/>
+                <constraint firstItem="KRW-5l-ksm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="gTg-uq-x53"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cpt-6c-bgM" secondAttribute="trailing" constant="20" id="gXm-ap-ote"/>
+                <constraint firstItem="cpt-6c-bgM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ijT-6w-CI8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="F91-9z-zV3" secondAttribute="trailing" id="jXp-cC-445"/>
+                <constraint firstItem="CZa-70-bPj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="qKI-pu-8Ab"/>
+                <constraint firstItem="XYB-nS-2G7" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ruz-mR-HeT"/>
+                <constraint firstItem="F91-9z-zV3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tPu-5M-mMQ"/>
+                <constraint firstItem="JyY-qQ-eXp" firstAttribute="leading" secondItem="KRW-5l-ksm" secondAttribute="trailing" constant="68.5" id="ttc-f9-LFT"/>
+                <constraint firstItem="KRW-5l-ksm" firstAttribute="top" secondItem="CZa-70-bPj" secondAttribute="bottom" constant="19" id="v1k-mG-NAf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dYs-Yh-Ogz" secondAttribute="trailing" constant="32" id="zQS-2G-nwA"/>
+            </constraints>
+            <point key="canvasLocation" x="150.72463768115944" y="9.375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.down.heart" catalog="system" width="128" height="109"/>
+        <image name="install1" width="300" height="168"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="who2" width="282" height="179"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
