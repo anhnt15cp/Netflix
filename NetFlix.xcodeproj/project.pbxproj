@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC16406328F16C4E00581124 /* HomePageView1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC16406128F16C4E00581124 /* HomePageView1TableViewCell.swift */; };
+		CC16406428F16C4E00581124 /* HomePageView1TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC16406228F16C4E00581124 /* HomePageView1TableViewCell.xib */; };
+		CC16406828F16FAF00581124 /* HomePage1CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC16406628F16FAF00581124 /* HomePage1CollectionViewCell.swift */; };
+		CC16406928F16FAF00581124 /* HomePage1CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC16406728F16FAF00581124 /* HomePage1CollectionViewCell.xib */; };
 		CC33A68B28E48A44009C7E45 /* TermOfUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33A68928E48A44009C7E45 /* TermOfUseViewController.swift */; };
 		CC33A68C28E48A44009C7E45 /* TermOfUseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC33A68A28E48A44009C7E45 /* TermOfUseViewController.xib */; };
 		CC33A68F28E48CBA009C7E45 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33A68D28E48CBA009C7E45 /* PrivacyViewController.swift */; };
@@ -18,8 +22,6 @@
 		CC33A6A328E49333009C7E45 /* GetPassword2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33A6A128E49333009C7E45 /* GetPassword2ViewController.swift */; };
 		CC33A6A428E49333009C7E45 /* GetPassword2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC33A6A228E49333009C7E45 /* GetPassword2ViewController.xib */; };
 		CC33A6AF28E6020A009C7E45 /* MovieTaBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33A6AE28E6020A009C7E45 /* MovieTaBarController.swift */; };
-		CC33A6B228E6025B009C7E45 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33A6B028E6025B009C7E45 /* HomePageViewController.swift */; };
-		CC33A6B328E6025B009C7E45 /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC33A6B128E6025B009C7E45 /* HomePageViewController.xib */; };
 		CC33A6B628E60280009C7E45 /* NewAndHotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33A6B428E60280009C7E45 /* NewAndHotViewController.swift */; };
 		CC33A6B728E60280009C7E45 /* NewAndHotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC33A6B528E60280009C7E45 /* NewAndHotViewController.xib */; };
 		CC33A6BA28E6029D009C7E45 /* InstallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC33A6B828E6029C009C7E45 /* InstallViewController.swift */; };
@@ -58,9 +60,19 @@
 		CCC0AA3328E43EEC004E3A9B /* NotificationCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCC0AA3128E43EEC004E3A9B /* NotificationCenterViewController.xib */; };
 		CCC0AA3628E44E7D004E3A9B /* WebHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC0AA3428E44E7D004E3A9B /* WebHelpViewController.swift */; };
 		CCC0AA3728E44E7D004E3A9B /* WebHelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCC0AA3528E44E7D004E3A9B /* WebHelpViewController.xib */; };
+		CCC32F9428EF19CB00DCE137 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC32F9228EF19CB00DCE137 /* HomePageViewController.swift */; };
+		CCC32F9528EF19CB00DCE137 /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCC32F9328EF19CB00DCE137 /* HomePageViewController.xib */; };
+		CCC32F9828EF1AA600DCE137 /* HomePageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC32F9628EF1AA600DCE137 /* HomePageTableViewCell.swift */; };
+		CCC32F9928EF1AA600DCE137 /* HomePageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCC32F9728EF1AA600DCE137 /* HomePageTableViewCell.xib */; };
+		CCC32F9C28EF1B6100DCE137 /* HomePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC32F9A28EF1B6100DCE137 /* HomePageCollectionViewCell.swift */; };
+		CCC32F9D28EF1B6100DCE137 /* HomePageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCC32F9B28EF1B6100DCE137 /* HomePageCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC16406128F16C4E00581124 /* HomePageView1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView1TableViewCell.swift; sourceTree = "<group>"; };
+		CC16406228F16C4E00581124 /* HomePageView1TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageView1TableViewCell.xib; sourceTree = "<group>"; };
+		CC16406628F16FAF00581124 /* HomePage1CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage1CollectionViewCell.swift; sourceTree = "<group>"; };
+		CC16406728F16FAF00581124 /* HomePage1CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePage1CollectionViewCell.xib; sourceTree = "<group>"; };
 		CC33A68928E48A44009C7E45 /* TermOfUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermOfUseViewController.swift; sourceTree = "<group>"; };
 		CC33A68A28E48A44009C7E45 /* TermOfUseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermOfUseViewController.xib; sourceTree = "<group>"; };
 		CC33A68D28E48CBA009C7E45 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
@@ -72,8 +84,6 @@
 		CC33A6A128E49333009C7E45 /* GetPassword2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPassword2ViewController.swift; sourceTree = "<group>"; };
 		CC33A6A228E49333009C7E45 /* GetPassword2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GetPassword2ViewController.xib; sourceTree = "<group>"; };
 		CC33A6AE28E6020A009C7E45 /* MovieTaBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTaBarController.swift; sourceTree = "<group>"; };
-		CC33A6B028E6025B009C7E45 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
-		CC33A6B128E6025B009C7E45 /* HomePageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
 		CC33A6B428E60280009C7E45 /* NewAndHotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAndHotViewController.swift; sourceTree = "<group>"; };
 		CC33A6B528E60280009C7E45 /* NewAndHotViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewAndHotViewController.xib; sourceTree = "<group>"; };
 		CC33A6B828E6029C009C7E45 /* InstallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +124,12 @@
 		CCC0AA3128E43EEC004E3A9B /* NotificationCenterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationCenterViewController.xib; sourceTree = "<group>"; };
 		CCC0AA3428E44E7D004E3A9B /* WebHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebHelpViewController.swift; sourceTree = "<group>"; };
 		CCC0AA3528E44E7D004E3A9B /* WebHelpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebHelpViewController.xib; sourceTree = "<group>"; };
+		CCC32F9228EF19CB00DCE137 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		CCC32F9328EF19CB00DCE137 /* HomePageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
+		CCC32F9628EF1AA600DCE137 /* HomePageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTableViewCell.swift; sourceTree = "<group>"; };
+		CCC32F9728EF1AA600DCE137 /* HomePageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageTableViewCell.xib; sourceTree = "<group>"; };
+		CCC32F9A28EF1B6100DCE137 /* HomePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewCell.swift; sourceTree = "<group>"; };
+		CCC32F9B28EF1B6100DCE137 /* HomePageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +150,6 @@
 				CC33A6BC28E6F457009C7E45 /* WhoWatchingViewController.swift */,
 				CC33A6BD28E6F457009C7E45 /* WhoWatchingViewController.xib */,
 				CC33A6AE28E6020A009C7E45 /* MovieTaBarController.swift */,
-				CC33A6B028E6025B009C7E45 /* HomePageViewController.swift */,
-				CC33A6B128E6025B009C7E45 /* HomePageViewController.xib */,
 				CC33A6B428E60280009C7E45 /* NewAndHotViewController.swift */,
 				CC33A6B528E60280009C7E45 /* NewAndHotViewController.xib */,
 			);
@@ -186,6 +200,7 @@
 				CCC0A9C228E2A9C5004E3A9B /* Assets.xcassets */,
 				CCC0A9C428E2A9C5004E3A9B /* LaunchScreen.storyboard */,
 				CCC0A9C728E2A9C5004E3A9B /* Info.plist */,
+				CCC32F9128EF19B400DCE137 /* HomeMovieScreen */,
 				CC3FAD3E28E9E25C00C138B6 /* InstallScreen */,
 				CC33A6A528E55502009C7E45 /* MovieScreen */,
 				CCC0A9E528E32A0A004E3A9B /* HelpScreen */,
@@ -241,6 +256,23 @@
 				CC33A69A28E4917E009C7E45 /* ChattingViewController.xib */,
 			);
 			path = HelpScreen;
+			sourceTree = "<group>";
+		};
+		CCC32F9128EF19B400DCE137 /* HomeMovieScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CCC32F9228EF19CB00DCE137 /* HomePageViewController.swift */,
+				CCC32F9328EF19CB00DCE137 /* HomePageViewController.xib */,
+				CCC32F9628EF1AA600DCE137 /* HomePageTableViewCell.swift */,
+				CCC32F9728EF1AA600DCE137 /* HomePageTableViewCell.xib */,
+				CCC32F9A28EF1B6100DCE137 /* HomePageCollectionViewCell.swift */,
+				CCC32F9B28EF1B6100DCE137 /* HomePageCollectionViewCell.xib */,
+				CC16406128F16C4E00581124 /* HomePageView1TableViewCell.swift */,
+				CC16406228F16C4E00581124 /* HomePageView1TableViewCell.xib */,
+				CC16406628F16FAF00581124 /* HomePage1CollectionViewCell.swift */,
+				CC16406728F16FAF00581124 /* HomePage1CollectionViewCell.xib */,
+			);
+			path = HomeMovieScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,9 +333,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC33A6B328E6025B009C7E45 /* HomePageViewController.xib in Resources */,
 				CC3FAD4628E9EEA000C138B6 /* FileInstallViewController.xib in Resources */,
 				CC33A69C28E4917E009C7E45 /* ChattingViewController.xib in Resources */,
+				CC16406928F16FAF00581124 /* HomePage1CollectionViewCell.xib in Resources */,
 				CC33A6B728E60280009C7E45 /* NewAndHotViewController.xib in Resources */,
 				CCC0AA3728E44E7D004E3A9B /* WebHelpViewController.xib in Resources */,
 				CCC0A9D328E2AAB4004E3A9B /* ScrollView.xib in Resources */,
@@ -312,17 +344,21 @@
 				CC3FAD4228E9EAAD00C138B6 /* SetupInstallViewController.xib in Resources */,
 				CC33A6BB28E6029D009C7E45 /* InstallViewController.xib in Resources */,
 				CCC0A9C628E2A9C5004E3A9B /* LaunchScreen.storyboard in Resources */,
+				CCC32F9D28EF1B6100DCE137 /* HomePageCollectionViewCell.xib in Resources */,
 				CCC0A9C328E2A9C5004E3A9B /* Assets.xcassets in Resources */,
 				CC33A69428E48EB1009C7E45 /* GetPasswordViewController.xib in Resources */,
 				CCC0A9D928E2D03A004E3A9B /* LogginViewController.xib in Resources */,
 				CCC0A9C128E2A9C4004E3A9B /* Main.storyboard in Resources */,
 				CC33A69028E48CBA009C7E45 /* PrivacyViewController.xib in Resources */,
+				CCC32F9928EF1AA600DCE137 /* HomePageTableViewCell.xib in Resources */,
 				CC33A6A428E49333009C7E45 /* GetPassword2ViewController.xib in Resources */,
+				CCC32F9528EF19CB00DCE137 /* HomePageViewController.xib in Resources */,
 				CC33A6BF28E6F457009C7E45 /* WhoWatchingViewController.xib in Resources */,
 				CC3FAD5228EABDC000C138B6 /* TapImageViewController.xib in Resources */,
 				CC3FAD4A28E9F0BB00C138B6 /* SearchMovieViewController.xib in Resources */,
 				CC33A68C28E48A44009C7E45 /* TermOfUseViewController.xib in Resources */,
 				CCC0AA3328E43EEC004E3A9B /* NotificationCenterViewController.xib in Resources */,
+				CC16406428F16C4E00581124 /* HomePageView1TableViewCell.xib in Resources */,
 				CCC0A9E428E32799004E3A9B /* WebKitViewController.xib in Resources */,
 				CCC0A9E928E3304D004E3A9B /* HelpViewController.xib in Resources */,
 			);
@@ -338,7 +374,6 @@
 				CC33A6BA28E6029D009C7E45 /* InstallViewController.swift in Sources */,
 				CCC0A9D828E2D03A004E3A9B /* LogginViewController.swift in Sources */,
 				CCC0AA3628E44E7D004E3A9B /* WebHelpViewController.swift in Sources */,
-				CC33A6B228E6025B009C7E45 /* HomePageViewController.swift in Sources */,
 				CC3FAD4D28E9F26C00C138B6 /* SearchMovieTableViewCell.swift in Sources */,
 				CC33A68F28E48CBA009C7E45 /* PrivacyViewController.swift in Sources */,
 				CCC0A9BE28E2A9C4004E3A9B /* Netflix.swift in Sources */,
@@ -350,12 +385,17 @@
 				CC33A6AF28E6020A009C7E45 /* MovieTaBarController.swift in Sources */,
 				CC33A6BE28E6F457009C7E45 /* WhoWatchingViewController.swift in Sources */,
 				CCC0A9CF28E2AA80004E3A9B /* ScrollView.swift in Sources */,
+				CC16406828F16FAF00581124 /* HomePage1CollectionViewCell.swift in Sources */,
 				CC3FAD4528E9EEA000C138B6 /* FileInstallViewController.swift in Sources */,
 				CC3FAD4928E9F0BB00C138B6 /* SearchMovieViewController.swift in Sources */,
+				CC16406328F16C4E00581124 /* HomePageView1TableViewCell.swift in Sources */,
+				CCC32F9C28EF1B6100DCE137 /* HomePageCollectionViewCell.swift in Sources */,
 				CC3FAD4128E9EAAD00C138B6 /* SetupInstallViewController.swift in Sources */,
 				CC3FAD5128EABDC000C138B6 /* TapImageViewController.swift in Sources */,
 				CCC0A9BA28E2A9C4004E3A9B /* AppDelegate.swift in Sources */,
+				CCC32F9828EF1AA600DCE137 /* HomePageTableViewCell.swift in Sources */,
 				CCC0A9DC28E30846004E3A9B /* JohnViewController.swift in Sources */,
+				CCC32F9428EF19CB00DCE137 /* HomePageViewController.swift in Sources */,
 				CCC0AA3228E43EEC004E3A9B /* NotificationCenterViewController.swift in Sources */,
 				CC33A69328E48EB1009C7E45 /* GetPasswordViewController.swift in Sources */,
 				CC33A6A328E49333009C7E45 /* GetPassword2ViewController.swift in Sources */,
@@ -507,6 +547,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KD39G9W3UR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NetFlix/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -534,6 +575,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KD39G9W3UR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NetFlix/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

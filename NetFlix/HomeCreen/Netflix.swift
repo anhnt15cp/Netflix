@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     
     
     func setupUI() {
-//        view.addSubview(myScrollView!)
+        view.addSubview(myScrollView!)
         myScrollView.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height)
         myScrollView.isScrollEnabled = true
         myScrollView.showsHorizontalScrollIndicator = true
@@ -67,6 +67,7 @@ class ViewController: UIViewController {
         myLabel2.text = "NETFLIX"
         myLabel2.textColor = .red
         myLabel2.frame = CGRect(x: 10, y: 25, width: 150, height: 50)
+        
         
     }
     func setupImage(config: [Netflix]) {

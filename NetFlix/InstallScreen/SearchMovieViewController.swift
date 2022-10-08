@@ -15,7 +15,9 @@ class SearchMovieViewController: UIViewController {
     @IBOutlet weak var mySearchBar: UISearchBar!
     
     var movies: [movie] = []
+    var movies1: [movie] = []
     var searchBar1: [movie] = []
+    var searchBar2: [movie] = []
     var searching: Bool = false
     
     override func viewDidLoad() {
@@ -44,9 +46,21 @@ class SearchMovieViewController: UIViewController {
         let data7 = movie(image: "sreach8", name: "Aquaman and the lost kingdom")
         let data8 = movie(image: "sreach9", name: "Đại úy Marvel 2")
         let data9 = movie(image: "sreach10", name: "Người môi giới")
+        let data10 = movie(image: "vietnam1", name: "Thị Nở")
+        let data11 = movie(image: "vietnam2", name: "Tấm Cám Chuyện Chưa Kể")
+        let data12 = movie(image: "vietnam3", name: "Cả Một Đời Ân Oán")
+        let data13 = movie(image: "vietnam4", name: "Sinh Tử")
+        let data14 = movie(image: "vietnam5", name: "Người Phán Xử")
+        let data15 = movie(image: "vietnam6", name: "Về Nhà Đi Con")
+        let data16 = movie(image: "vietnam7", name: "Mắt Biếc")
+        let data17 = movie(image: "vietnam8", name: "Mến Gái Miền Tây")
+        let data18 = movie(image: "vietnam9", name: "Quỳnh Búp Bê")
+        
         
         movies.append(contentsOf: [data,data1,data2,data3,data4,data5,data6,data7,data8,data9])
+        movies1.append(contentsOf: [data10,data11,data12,data13,data14,data15,data16,data17,data18])
         searchBar1.append(contentsOf: [data,data1,data2,data3,data4,data5,data6,data7,data8,data9])
+        searchBar2.append(contentsOf: [data10,data11,data12,data13,data14,data15,data16,data17,data18])
         myTableView.reloadData()
     }
     
@@ -56,29 +70,56 @@ class SearchMovieViewController: UIViewController {
 
 extension SearchMovieViewController: UITableViewDelegate,UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
-        3
+        2
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        searchBar1.count
+        switch section {
+        case 0 :
+            return searchBar1.count
+        case 1 :
+            return searchBar2.count
+        default:
+            return 3
+        }
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SearchMovieTableViewCell", for: indexPath) as? SearchMovieTableViewCell
-        let item = searchBar1[indexPath.row]
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SearchMovieTableViewCell", for: indexPath) as? SearchMovieTableViewCell
+            let item = searchBar1[indexPath.row]
+            
+            cell?.myImageView.image = UIImage(named: item.image)
+            cell?.myLabel.text = item.name
+            
+            return cell!
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SearchMovieTableViewCell", for: indexPath) as? SearchMovieTableViewCell
+            let item = searchBar2[indexPath.row]
+            
+            cell?.myImageView.image = UIImage(named: item.image)
+            cell?.myLabel.text = item.name
+            
+            return cell!
+        }
         
         
-        cell?.myImageView.image = UIImage(named: item.image)
-        cell?.myLabel.text = item.name
         
-        
-        
-        
-        return cell!
+  
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "TÌM KIẾM HÀNG ĐẦU"
+        switch section {
+        case 0 :
+            return " Tìm Kiếm Hàng Đầu"
+        case 1 :
+            return " Phim Truyền Hình Việt Nam"
+        default:
+            return ""
+        }
     }
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        200
+    }
 }
+    
 extension SearchMovieViewController: UISearchBarDelegate {
     
     
@@ -87,9 +128,13 @@ extension SearchMovieViewController: UISearchBarDelegate {
             searchBar1 = movies.filter({ movie in
                 movie.name.contains(searchText)
             })
+            searchBar2 = movies1.filter({ moive in
+                moive.name.contains(searchText)
+            })
             myTableView.reloadData()
         }else {
             searchBar1 = movies
+            searchBar2 = movies1
             myTableView.reloadData()
             
         }

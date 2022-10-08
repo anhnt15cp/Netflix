@@ -8,14 +8,18 @@
 import UIKit
 
 class NewAndHotViewController: UIViewController {
-
+    @IBOutlet weak var myTabBar: UITabBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let appearance = UITabBarAppearance()
+        appearance.backgroundColor = .black
+        myTabBar.standardAppearance = appearance
+        appearance.selectionIndicatorTintColor = .gray
     }
-
-
-   
-
+    
+    
+    
+    
 }

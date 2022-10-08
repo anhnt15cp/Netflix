@@ -23,12 +23,12 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tệp tải xuống" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZa-70-bPj">
-                    <rect key="frame" x="20" y="44" width="250" height="45"/>
+                    <rect key="frame" x="20" y="44" width="200" height="45"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="AuF-nh-LvF"/>
-                        <constraint firstAttribute="width" constant="250" id="tfE-yj-JNb"/>
+                        <constraint firstAttribute="width" constant="200" id="tfE-yj-JNb"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="italicSystem" pointSize="38"/>
+                    <fontDescription key="fontDescription" type="italicSystem" pointSize="31"/>
                     <color key="textColor" systemColor="systemRedColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -37,26 +37,13 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="40i-2a-h6j"/>
                     </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title="    Tải xuống thông minh" image="arrow.down.heart" catalog="system">
                         <color key="titleColor" systemColor="systemRedColor"/>
                     </state>
                     <connections>
                         <action selector="setupInstall:" destination="-1" eventType="touchUpInside" id="Wfx-qD-Df4"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYs-Yh-Ogz">
-                    <rect key="frame" x="300" y="44" width="82" height="51"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="51" id="zE9-2R-ckH"/>
-                    </constraints>
-                    <color key="tintColor" systemColor="systemRedColor"/>
-                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" image="magnifyingglass" catalog="system">
-                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
-                    </state>
-                    <connections>
-                        <action selector="sreachMovie:" destination="-1" eventType="touchUpInside" id="C95-dZ-IkT"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYB-nS-2G7">
@@ -85,49 +72,64 @@
                         <action selector="whatInstall:" destination="-1" eventType="touchUpInside" id="lxQ-nR-qSR"/>
                     </connections>
                 </button>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="who2" translatesAutoresizingMaskIntoConstraints="NO" id="JyY-qQ-eXp">
-                    <rect key="frame" x="300" y="108" width="69" height="35"/>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYs-Yh-Ogz">
+                    <rect key="frame" x="322" y="50" width="82" height="51"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="69" id="rj6-W3-3am"/>
-                        <constraint firstAttribute="height" constant="35" id="syf-SX-Vn0"/>
+                        <constraint firstAttribute="height" constant="51" id="aeQ-dm-Tht"/>
+                        <constraint firstAttribute="width" constant="82" id="qMd-RX-W2L"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="magnifyingglass" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                    </state>
+                    <connections>
+                        <action selector="sreachMovie:" destination="-1" eventType="touchUpInside" id="C95-dZ-IkT"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="install1" translatesAutoresizingMaskIntoConstraints="NO" id="JyY-qQ-eXp">
+                    <rect key="frame" x="252" y="54" width="70" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="BtR-um-mff"/>
+                        <constraint firstAttribute="height" constant="40" id="Zny-ms-Mrv"/>
                     </constraints>
                 </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dYs-Yh-Ogz" secondAttribute="trailing" constant="10" id="1ZB-EN-Asn"/>
                 <constraint firstItem="CZa-70-bPj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="1oT-XK-QeB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="F91-9z-zV3" secondAttribute="bottom" id="4g3-hW-qVV"/>
-                <constraint firstItem="dYs-Yh-Ogz" firstAttribute="leading" secondItem="CZa-70-bPj" secondAttribute="trailing" constant="30" id="5Q0-UQ-h7H"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JyY-qQ-eXp" secondAttribute="trailing" constant="45" id="7dL-Gh-jV8"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cpt-6c-bgM" secondAttribute="bottom" constant="158" id="8Oq-jZ-Hks"/>
+                <constraint firstItem="XYB-nS-2G7" firstAttribute="top" secondItem="JyY-qQ-eXp" secondAttribute="bottom" constant="262" id="Cg5-fn-GFb"/>
                 <constraint firstItem="F91-9z-zV3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="D4l-zH-ReC"/>
+                <constraint firstItem="JyY-qQ-eXp" firstAttribute="leading" secondItem="CZa-70-bPj" secondAttribute="trailing" constant="32" id="E5i-6U-8JW"/>
                 <constraint firstItem="cpt-6c-bgM" firstAttribute="top" secondItem="XYB-nS-2G7" secondAttribute="bottom" constant="114" id="Lcf-3o-DJX"/>
                 <constraint firstItem="XYB-nS-2G7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="M6L-WI-hBV"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XYB-nS-2G7" secondAttribute="trailing" constant="10" id="OQG-Yq-POh"/>
+                <constraint firstItem="dYs-Yh-Ogz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="6" id="Phh-1R-J74"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KRW-5l-ksm" secondAttribute="trailing" constant="182.5" id="Sko-5m-Mbh"/>
-                <constraint firstItem="dYs-Yh-Ogz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ZqI-Fr-GLz"/>
-                <constraint firstItem="JyY-qQ-eXp" firstAttribute="top" secondItem="dYs-Yh-Ogz" secondAttribute="bottom" constant="13" id="fer-GQ-hEe"/>
+                <constraint firstItem="JyY-qQ-eXp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="Xw8-kH-afc"/>
+                <constraint firstItem="XYB-nS-2G7" firstAttribute="top" secondItem="KRW-5l-ksm" secondAttribute="bottom" constant="203" id="dvr-9e-dq1"/>
                 <constraint firstItem="KRW-5l-ksm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="gTg-uq-x53"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cpt-6c-bgM" secondAttribute="trailing" constant="20" id="gXm-ap-ote"/>
                 <constraint firstItem="cpt-6c-bgM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ijT-6w-CI8"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="F91-9z-zV3" secondAttribute="trailing" id="jXp-cC-445"/>
+                <constraint firstItem="dYs-Yh-Ogz" firstAttribute="leading" secondItem="JyY-qQ-eXp" secondAttribute="trailing" id="oIb-BZ-rKh"/>
                 <constraint firstItem="CZa-70-bPj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="qKI-pu-8Ab"/>
                 <constraint firstItem="XYB-nS-2G7" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ruz-mR-HeT"/>
                 <constraint firstItem="F91-9z-zV3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tPu-5M-mMQ"/>
-                <constraint firstItem="JyY-qQ-eXp" firstAttribute="leading" secondItem="KRW-5l-ksm" secondAttribute="trailing" constant="68.5" id="ttc-f9-LFT"/>
                 <constraint firstItem="KRW-5l-ksm" firstAttribute="top" secondItem="CZa-70-bPj" secondAttribute="bottom" constant="19" id="v1k-mG-NAf"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dYs-Yh-Ogz" secondAttribute="trailing" constant="32" id="zQS-2G-nwA"/>
             </constraints>
-            <point key="canvasLocation" x="150.72463768115944" y="9.375"/>
+            <point key="canvasLocation" x="432" y="-41"/>
         </view>
     </objects>
     <resources>
         <image name="arrow.down.heart" catalog="system" width="128" height="109"/>
         <image name="install1" width="300" height="168"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <image name="who2" width="282" height="179"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

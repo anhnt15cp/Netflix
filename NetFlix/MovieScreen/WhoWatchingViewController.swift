@@ -17,7 +17,7 @@ class WhoWatchingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpTapGestureImage()
-
+     
        
         
     }
@@ -38,8 +38,11 @@ class WhoWatchingViewController: UIViewController {
         imageView5.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapGesture)))
     }
     @objc func tapGesture() {
+        
         let tapVC = MovieTaBarController()
         tapVC.modalPresentationStyle = .fullScreen
+        tapVC.tabBar.backgroundColor = .black
+        
         present(tapVC, animated: true)
         
         
