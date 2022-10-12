@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieViewController" customModule="NetFlix" customModuleProvider="target">
+            <connections>
+                <outlet property="myWebKit" destination="vCb-Lq-C7i" id="Rn7-ns-emC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vCb-Lq-C7i">
+                    <rect key="frame" x="0.0" y="74" width="414" height="788"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocM-rL-DDT">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
+                    <connections>
+                        <action selector="backButton:" destination="-1" eventType="touchUpInside" id="izn-ai-rYi"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vCb-Lq-C7i" firstAttribute="top" secondItem="ocM-rL-DDT" secondAttribute="bottom" id="SXD-IC-WBR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vCb-Lq-C7i" secondAttribute="trailing" id="aSE-aP-2IR"/>
+                <constraint firstItem="ocM-rL-DDT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cKc-88-zOr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="vCb-Lq-C7i" secondAttribute="bottom" id="e1E-ql-AzV"/>
+                <constraint firstItem="ocM-rL-DDT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="h0K-eU-wyn"/>
+                <constraint firstItem="vCb-Lq-C7i" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="lv2-OT-BQU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ocM-rL-DDT" secondAttribute="trailing" id="nqq-5G-qeZ"/>
+                <constraint firstItem="vCb-Lq-C7i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="pid-Zo-eNF"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="80"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

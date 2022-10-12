@@ -71,9 +71,7 @@ class TapImageViewController: UIViewController {
         let alert = UIAlertController(title: "Đăng xuất", message: "Khi đăng xuất khỏi ứng dụng này , bạn cũng sẽ đăng xuất khỏi tất cả các ứng dụng Netflix khác trên thiết bị này ", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Không", style: .cancel))
         alert.addAction(UIAlertAction(title: "Có", style: .default, handler: { _ in
-            let vc = ViewController()
-            vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: true)
+            self.dismiss(animated: true)
         
         }))
         present(alert, animated: true)

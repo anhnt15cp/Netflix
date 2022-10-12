@@ -15,6 +15,7 @@ struct DataMovie {
     var nameMovie2: String = ""
     var description: String = ""
     var image: String = ""
+    var url: String = ""
 }
 
 

@@ -30,6 +30,7 @@ class NewAndHotTableViewCell: UITableViewCell {
         descriptionMovieLb.text = movie.description
         imageMovie.image = UIImage(named: movie.image)
         
+        
     }
    
     

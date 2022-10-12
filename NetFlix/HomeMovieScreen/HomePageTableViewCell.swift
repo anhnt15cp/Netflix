@@ -7,8 +7,12 @@
 
 import UIKit
 
+//typealias DidSelectClosure = ((_ tableIndex: Int , _ collectionIndex: Int) ->Void)
+
 class HomePageTableViewCell: UITableViewCell {
     @IBOutlet weak var myCollectionView: UICollectionView!
+    var index: Int = 0
+    var didSelectedClosure: (( _ tableIndex: Int ,  _ collectionIndex: Int) ->Void)?
     var array: [String] = []
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,6 +35,7 @@ class HomePageTableViewCell: UITableViewCell {
     
 }
 extension HomePageTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+   
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return array.count
     }
@@ -44,5 +49,7 @@ extension HomePageTableViewCell: UICollectionViewDelegate, UICollectionViewDataS
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.bounds.width/3, height: 200)
     }
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        didSelectedClosure!(index,indexPath.row)
+    }
 }

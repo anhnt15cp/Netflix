@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ncv-NM-wOZ">
-                    <rect key="frame" x="10" y="44" width="50" height="58"/>
+                    <rect key="frame" x="10" y="34" width="50" height="58"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="ol4-gA-hP8"/>
@@ -37,16 +37,16 @@
                     </connections>
                 </button>
                 <searchBar contentMode="scaleToFill" placeholder="Tìm kiếm" translatesAutoresizingMaskIntoConstraints="NO" id="SYV-iA-CNc">
-                    <rect key="frame" x="80" y="44" width="334" height="51"/>
+                    <rect key="frame" x="80" y="44" width="334" height="40"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="51" id="I6b-Nu-oBn"/>
+                        <constraint firstAttribute="height" constant="40" id="I6b-Nu-oBn"/>
                         <constraint firstAttribute="width" constant="334" id="V85-8z-c2Z"/>
                     </constraints>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fAr-Tf-DdQ">
-                    <rect key="frame" x="0.0" y="95" width="414" height="767"/>
+                    <rect key="frame" x="0.0" y="84" width="414" height="778"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
@@ -55,7 +55,7 @@
             <constraints>
                 <constraint firstItem="fAr-Tf-DdQ" firstAttribute="top" secondItem="SYV-iA-CNc" secondAttribute="bottom" id="2b5-Gp-ox5"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fAr-Tf-DdQ" secondAttribute="trailing" id="50B-8k-zk9"/>
-                <constraint firstItem="Ncv-NM-wOZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="5WL-Ni-oOl"/>
+                <constraint firstItem="Ncv-NM-wOZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-10" id="5WL-Ni-oOl"/>
                 <constraint firstItem="SYV-iA-CNc" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="FQi-Ck-Oq5"/>
                 <constraint firstItem="fAr-Tf-DdQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="MO7-tp-7ZG"/>
                 <constraint firstItem="SYV-iA-CNc" firstAttribute="leading" secondItem="Ncv-NM-wOZ" secondAttribute="trailing" constant="20" id="SKN-22-3mq"/>

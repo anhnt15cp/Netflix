@@ -9,6 +9,7 @@ import UIKit
 
 class HomePageViewController: UIViewController {
     @IBOutlet weak var myTableView: UITableView!
+   
     var image: [String] = ["screach1","sreach2","sreach3","sreach4","sreach5","sreach6","sreach7","sreach8","sreach9",]
     var image1: [String] = ["vietnam1","vietnam2","vietnam3","vietnam4","vietnam5","vietnam6","vietnam7","vietnam8","vietnam9"]
     var image2: [String] = ["thinhhanh1","thinhhanh2","thinhhanh3","thinhhanh4","thinhhanh5","thinhhanh7","thinhhanh6","thinhhanh8","thinhhanh9",]
@@ -16,6 +17,10 @@ class HomePageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpTableViewCell()
+    }
+    func getData() {
+       
+        
     }
     
     func setUpTableViewCell() {
@@ -29,6 +34,13 @@ class HomePageViewController: UIViewController {
         
         let nib2 = UINib(nibName: "HomePageView2TableViewCell", bundle: nil)
         myTableView.register(nib2, forCellReuseIdentifier: "HomePageView2TableViewCell")
+    }
+    func moveOnMovie1ViewController(tableIndex: Int, collecIndex: Int) {
+        let vc = Movie1ViewController()
+        
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+        
     }
     
 }
@@ -46,6 +58,7 @@ extension HomePageViewController: UITableViewDelegate, UITableViewDataSource {
         default:
             return 3
         }
+        
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -55,6 +68,9 @@ extension HomePageViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "HomePageTableViewCell", for: indexPath) as! HomePageTableViewCell
             cell.array = image
+            cell.didSelectedClosure = { tableIndex, collectionIndex in
+                self.moveOnMovie1ViewController(tableIndex: tableIndex, collecIndex: collectionIndex)
+            }
             return cell
         }else if indexPath.section == 1 {
             let cell1 = tableView.dequeueReusableCell(withIdentifier: "HomePageView1TableViewCell", for: indexPath) as! HomePageView1TableViewCell
@@ -98,6 +114,10 @@ extension HomePageViewController: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 30
+    }
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        view.tintColor = .white
+        
     }
     
 }

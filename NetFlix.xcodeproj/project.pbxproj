@@ -45,6 +45,11 @@
 		CC5D431F28F31F380050DE1D /* NewAndHotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5D431D28F31F380050DE1D /* NewAndHotTableViewCell.swift */; };
 		CC5D432028F31F380050DE1D /* NewAndHotTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC5D431E28F31F380050DE1D /* NewAndHotTableViewCell.xib */; };
 		CC5D432228F323E20050DE1D /* DataMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5D432128F323E20050DE1D /* DataMovie.swift */; };
+		CC5D432B28F47A7F0050DE1D /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5D432928F47A7F0050DE1D /* MovieViewController.swift */; };
+		CC5D432C28F47A7F0050DE1D /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC5D432A28F47A7F0050DE1D /* MovieViewController.xib */; };
+		CC5D433328F580A70050DE1D /* Movie1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5D433128F580A70050DE1D /* Movie1ViewController.swift */; };
+		CC5D433428F580A70050DE1D /* Movie1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC5D433228F580A70050DE1D /* Movie1ViewController.xib */; };
+		CC5D433628F59F6D0050DE1D /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5D433528F59F6D0050DE1D /* File.swift */; };
 		CCC0A9BA28E2A9C4004E3A9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC0A9B928E2A9C4004E3A9B /* AppDelegate.swift */; };
 		CCC0A9BC28E2A9C4004E3A9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC0A9BB28E2A9C4004E3A9B /* SceneDelegate.swift */; };
 		CCC0A9BE28E2A9C4004E3A9B /* Netflix.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC0A9BD28E2A9C4004E3A9B /* Netflix.swift */; };
@@ -114,6 +119,11 @@
 		CC5D431D28F31F380050DE1D /* NewAndHotTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAndHotTableViewCell.swift; sourceTree = "<group>"; };
 		CC5D431E28F31F380050DE1D /* NewAndHotTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewAndHotTableViewCell.xib; sourceTree = "<group>"; };
 		CC5D432128F323E20050DE1D /* DataMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMovie.swift; sourceTree = "<group>"; };
+		CC5D432928F47A7F0050DE1D /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		CC5D432A28F47A7F0050DE1D /* MovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieViewController.xib; sourceTree = "<group>"; };
+		CC5D433128F580A70050DE1D /* Movie1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie1ViewController.swift; sourceTree = "<group>"; };
+		CC5D433228F580A70050DE1D /* Movie1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Movie1ViewController.xib; sourceTree = "<group>"; };
+		CC5D433528F59F6D0050DE1D /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		CCC0A9B628E2A9C4004E3A9B /* NetFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC0A9B928E2A9C4004E3A9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCC0A9BB28E2A9C4004E3A9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -158,16 +168,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CC33A6A528E55502009C7E45 /* MovieScreen */ = {
-			isa = PBXGroup;
-			children = (
-				CC33A6BC28E6F457009C7E45 /* WhoWatchingViewController.swift */,
-				CC33A6BD28E6F457009C7E45 /* WhoWatchingViewController.xib */,
-				CC33A6AE28E6020A009C7E45 /* MovieTaBarController.swift */,
-			);
-			path = MovieScreen;
-			sourceTree = "<group>";
-		};
 		CC35CB5328F1E627000F9FA0 /* NewAndHotScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +175,8 @@
 				CC33A6B528E60280009C7E45 /* NewAndHotViewController.xib */,
 				CC5D431D28F31F380050DE1D /* NewAndHotTableViewCell.swift */,
 				CC5D431E28F31F380050DE1D /* NewAndHotTableViewCell.xib */,
+				CC5D432928F47A7F0050DE1D /* MovieViewController.swift */,
+				CC5D432A28F47A7F0050DE1D /* MovieViewController.xib */,
 				CC5D432128F323E20050DE1D /* DataMovie.swift */,
 			);
 			path = NewAndHotScreen;
@@ -227,7 +229,6 @@
 				CC35CB5328F1E627000F9FA0 /* NewAndHotScreen */,
 				CCC32F9128EF19B400DCE137 /* HomeMovieScreen */,
 				CC3FAD3E28E9E25C00C138B6 /* InstallScreen */,
-				CC33A6A528E55502009C7E45 /* MovieScreen */,
 				CCC0A9E528E32A0A004E3A9B /* HelpScreen */,
 				CCC0A9CD28E2A9DC004E3A9B /* HomeCreen */,
 			);
@@ -242,6 +243,9 @@
 				CCC0A9CE28E2AA80004E3A9B /* ScrollView.swift */,
 				CCC0A9D228E2AAB4004E3A9B /* ScrollView.xib */,
 				CCC0A9D428E2B122004E3A9B /* DataScroll.swift */,
+				CC33A6BC28E6F457009C7E45 /* WhoWatchingViewController.swift */,
+				CC33A6BD28E6F457009C7E45 /* WhoWatchingViewController.xib */,
+				CC33A6AE28E6020A009C7E45 /* MovieTaBarController.swift */,
 				CCC0A9D628E2D03A004E3A9B /* LogginViewController.swift */,
 				CCC0A9D728E2D03A004E3A9B /* LogginViewController.xib */,
 				CCC0A9DA28E30846004E3A9B /* JohnViewController.swift */,
@@ -300,6 +304,9 @@
 				CCC32F9728EF1AA600DCE137 /* HomePageTableViewCell.xib */,
 				CCC32F9A28EF1B6100DCE137 /* HomePageCollectionViewCell.swift */,
 				CCC32F9B28EF1B6100DCE137 /* HomePageCollectionViewCell.xib */,
+				CC5D433128F580A70050DE1D /* Movie1ViewController.swift */,
+				CC5D433228F580A70050DE1D /* Movie1ViewController.xib */,
+				CC5D433528F59F6D0050DE1D /* File.swift */,
 			);
 			path = HomeMovieScreen;
 			sourceTree = "<group>";
@@ -369,10 +376,12 @@
 				CCC0AA3728E44E7D004E3A9B /* WebHelpViewController.xib in Resources */,
 				CC35CB5128F19068000F9FA0 /* HomePage2CollectionViewCell.xib in Resources */,
 				CCC0A9D328E2AAB4004E3A9B /* ScrollView.xib in Resources */,
+				CC5D432C28F47A7F0050DE1D /* MovieViewController.xib in Resources */,
 				CCC0A9DD28E30846004E3A9B /* JohnViewController.xib in Resources */,
 				CC3FAD4E28E9F26C00C138B6 /* SearchMovieTableViewCell.xib in Resources */,
 				CC3FAD4228E9EAAD00C138B6 /* SetupInstallViewController.xib in Resources */,
 				CC33A6BB28E6029D009C7E45 /* InstallViewController.xib in Resources */,
+				CC5D433428F580A70050DE1D /* Movie1ViewController.xib in Resources */,
 				CCC0A9C628E2A9C5004E3A9B /* LaunchScreen.storyboard in Resources */,
 				CCC32F9D28EF1B6100DCE137 /* HomePageCollectionViewCell.xib in Resources */,
 				CC5D432028F31F380050DE1D /* NewAndHotTableViewCell.xib in Resources */,
@@ -404,6 +413,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC5D431F28F31F380050DE1D /* NewAndHotTableViewCell.swift in Sources */,
+				CC5D433328F580A70050DE1D /* Movie1ViewController.swift in Sources */,
+				CC5D432B28F47A7F0050DE1D /* MovieViewController.swift in Sources */,
 				CC33A6BA28E6029D009C7E45 /* InstallViewController.swift in Sources */,
 				CCC0A9D828E2D03A004E3A9B /* LogginViewController.swift in Sources */,
 				CCC0AA3628E44E7D004E3A9B /* WebHelpViewController.swift in Sources */,
@@ -412,6 +423,7 @@
 				CCC0A9BE28E2A9C4004E3A9B /* Netflix.swift in Sources */,
 				CCC0A9E328E32799004E3A9B /* WebKitViewController.swift in Sources */,
 				CCC0A9D528E2B122004E3A9B /* DataScroll.swift in Sources */,
+				CC5D433628F59F6D0050DE1D /* File.swift in Sources */,
 				CC33A69B28E4917E009C7E45 /* ChattingViewController.swift in Sources */,
 				CC33A68B28E48A44009C7E45 /* TermOfUseViewController.swift in Sources */,
 				CCC0A9E828E3304D004E3A9B /* HelpViewController.swift in Sources */,
