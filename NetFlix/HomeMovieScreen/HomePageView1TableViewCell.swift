@@ -8,7 +8,7 @@
 import UIKit
 
 class HomePageView1TableViewCell: UITableViewCell {
-    var array: [String] = []
+    var array: [DataMovie1] = []
     
     @IBOutlet weak var myCollectionView1: UICollectionView!
     
@@ -42,7 +42,7 @@ extension HomePageView1TableViewCell: UICollectionViewDelegate , UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomePage1CollectionViewCell", for: indexPath) as! HomePage1CollectionViewCell
-        cell.imageView.image = UIImage(named: array[indexPath.row])
+        cell.imageView.image = UIImage(named: array[indexPath.row].image)
         return cell
         
     }

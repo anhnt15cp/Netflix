@@ -9,8 +9,8 @@ import UIKit
 
 class HomePageView2TableViewCell: UITableViewCell {
     @IBOutlet weak var myCollectionView2: UICollectionView!
-    var array: [String] = []
-    
+    var array: [DataMovie1] = []
+
     override func awakeFromNib() {
         super.awakeFromNib()
         setUpCollection()
@@ -31,7 +31,7 @@ extension HomePageView2TableViewCell: UICollectionViewDataSource,UICollectionVie
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomePage2CollectionViewCell", for: indexPath) as? HomePage2CollectionViewCell
-        cell?.myImageView.image = UIImage(named: array[indexPath.row])
+        cell?.myImageView.image = UIImage(named: array[indexPath.row].image)
         return cell!
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

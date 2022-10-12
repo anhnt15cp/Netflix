@@ -82,6 +82,18 @@
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kic-ie-2hh">
+                                        <rect key="frame" x="264" y="260" width="134" height="31"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="134" id="2HM-P8-QNy"/>
+                                            <constraint firstAttribute="height" constant="31" id="4KR-iW-TBC"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Play">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -101,10 +113,14 @@
                                     <constraint firstAttribute="trailing" secondItem="rp5-IW-UCg" secondAttribute="trailing" constant="150" id="Rmo-Pp-lY6"/>
                                     <constraint firstAttribute="trailing" secondItem="LfR-JR-2PK" secondAttribute="trailing" constant="130" id="RnZ-BC-la4"/>
                                     <constraint firstAttribute="trailing" secondItem="bsV-YN-8Sc" secondAttribute="trailing" constant="70" id="TE8-eX-E7D"/>
+                                    <constraint firstItem="GnF-d1-1LW" firstAttribute="top" secondItem="kic-ie-2hh" secondAttribute="bottom" constant="29" id="TN7-9p-iuz"/>
+                                    <constraint firstItem="kic-ie-2hh" firstAttribute="leading" secondItem="rp5-IW-UCg" secondAttribute="trailing" constant="16" id="XJu-aT-PNr"/>
                                     <constraint firstItem="rp5-IW-UCg" firstAttribute="leading" secondItem="nHI-MR-FkI" secondAttribute="leading" constant="65" id="Xyk-4F-tmc"/>
+                                    <constraint firstItem="kic-ie-2hh" firstAttribute="top" secondItem="bsV-YN-8Sc" secondAttribute="bottom" constant="10" id="eXc-hx-F8y"/>
                                     <constraint firstItem="rp5-IW-UCg" firstAttribute="top" secondItem="bsV-YN-8Sc" secondAttribute="bottom" constant="10" id="jem-CE-3sB"/>
                                     <constraint firstItem="GnF-d1-1LW" firstAttribute="top" secondItem="LfR-JR-2PK" secondAttribute="bottom" id="kkp-Vg-ehs"/>
                                     <constraint firstItem="bsV-YN-8Sc" firstAttribute="top" secondItem="PN8-cT-zQT" secondAttribute="bottom" id="red-0z-NIg"/>
+                                    <constraint firstAttribute="trailing" secondItem="kic-ie-2hh" secondAttribute="trailing" id="sz5-ry-m61"/>
                                 </constraints>
                             </view>
                         </subviews>

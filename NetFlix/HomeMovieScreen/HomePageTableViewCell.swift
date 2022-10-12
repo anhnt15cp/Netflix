@@ -13,7 +13,7 @@ class HomePageTableViewCell: UITableViewCell {
     @IBOutlet weak var myCollectionView: UICollectionView!
     var index: Int = 0
     var didSelectedClosure: (( _ tableIndex: Int ,  _ collectionIndex: Int) ->Void)?
-    var array: [String] = []
+    var array: [DataMovie1] = []
     override func awakeFromNib() {
         super.awakeFromNib()
         setUpCollection()
@@ -41,7 +41,7 @@ extension HomePageTableViewCell: UICollectionViewDelegate, UICollectionViewDataS
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomePageCollectionViewCell", for: indexPath) as! HomePageCollectionViewCell
-        cell.myImageView.image = UIImage(named: array[indexPath.row])
+        cell.myImageView.image = UIImage(named: array[indexPath.row].image)
         
         return cell
     }

@@ -8,6 +8,8 @@
 import Foundation
 struct DataMovie1 {
     var image: String = ""
-    var url: String = ""
-    
+    var name: String = ""
+    var day: String = ""
+    var desceription: String = ""
 }
+
