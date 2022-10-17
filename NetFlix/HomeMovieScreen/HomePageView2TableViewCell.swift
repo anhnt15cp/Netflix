@@ -15,6 +15,7 @@ class HomePageView2TableViewCell: UITableViewCell {
         super.awakeFromNib()
         setUpCollection()
     }
+    
     func setUpCollection() {
         myCollectionView2.delegate = self
         myCollectionView2.dataSource = self
@@ -25,7 +26,7 @@ class HomePageView2TableViewCell: UITableViewCell {
 }
 
 extension HomePageView2TableViewCell: UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
-    
+   
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return array.count
     }

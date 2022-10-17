@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SetupInstallViewController" customModule="NetFlix" customModuleProvider="target">
             <connections>
+                <outlet property="switch1" destination="OiH-Kr-ac2" id="vql-Ak-nSO"/>
+                <outlet property="switch2" destination="Ynm-YV-S7x" id="J32-dY-fsh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -60,15 +62,21 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OiH-Kr-ac2">
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OiH-Kr-ac2">
                     <rect key="frame" x="182.5" y="435" width="51" height="31"/>
                     <color key="tintColor" red="0.43137252329999998" green="0.54901963470000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <color key="onTintColor" systemColor="tintColor"/>
+                    <connections>
+                        <action selector="install1:" destination="-1" eventType="valueChanged" id="v0U-5p-jFu"/>
+                    </connections>
                 </switch>
-                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ynm-YV-S7x">
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Ynm-YV-S7x">
                     <rect key="frame" x="182.5" y="284" width="51" height="31"/>
                     <color key="tintColor" red="0.43137252329999998" green="0.54901963470000004" blue="0.92941176889999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <color key="onTintColor" systemColor="tintColor"/>
+                    <connections>
+                        <action selector="install2:" destination="-1" eventType="valueChanged" id="8CR-jO-XIO"/>
+                    </connections>
                 </switch>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

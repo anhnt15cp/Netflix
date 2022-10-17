@@ -10,7 +10,6 @@ import UIKit
 class NewAndHotViewController: UIViewController {
    
     @IBOutlet weak var myTableView: UITableView!
-    
     @IBOutlet weak var mySearchText: UIButton!
     
     var movies: [DataMovie] = []
@@ -89,15 +88,18 @@ extension NewAndHotViewController: UITableViewDataSource , UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NewAndHotTableViewCell", for: indexPath) as! NewAndHotTableViewCell
         
         cell.configuration(movie: movies[indexPath.row])
+        cell.closureMoveOnMovie = {
+            let vc = MovieViewController()
+            vc.modalPresentationStyle = .fullScreen
+            vc.url11 = self.movies[indexPath.row].url
+            self.present(vc, animated: true)
+            
+        }
         return cell
+       
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 460
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = MovieViewController()
-        vc.modalPresentationStyle = .fullScreen
-        vc.url11 = movies[indexPath.row].url
-        present(vc, animated: true)
-    }
+   
 }

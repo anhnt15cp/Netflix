@@ -16,10 +16,10 @@ class NewAndHotTableViewCell: UITableViewCell {
     @IBOutlet weak var descriptionMovieLb: UILabel!
     @IBOutlet weak var imageMovie: UIImageView!
     
-    
+    var closureMoveOnMovie: (() ->Void)?
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+       
     }
     func configuration(movie: DataMovie) {
         monthLabel.text = movie.monthMovie
@@ -32,7 +32,10 @@ class NewAndHotTableViewCell: UITableViewCell {
         
         
     }
-   
+    @IBAction func closureBt(_ sender: Any) {
+        closureMoveOnMovie!()
+    }
+    
     
     
 }

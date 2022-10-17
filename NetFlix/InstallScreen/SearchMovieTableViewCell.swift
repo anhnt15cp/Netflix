@@ -14,7 +14,7 @@ class SearchMovieTableViewCell: UITableViewCell {
         super.awakeFromNib()
        
     }
-    func config(model: movie) {
+    func config(model: Movie) {
         myImageView.image = UIImage(named: model.image)
         myLabel.text = model.name
     }

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-struct movie {
+struct Movie {
     var image: String = ""
     var name: String = ""
 }
@@ -14,12 +14,11 @@ class SearchMovieViewController: UIViewController {
     @IBOutlet weak var myTableView: UITableView!
     @IBOutlet weak var mySearchBar: UISearchBar!
     
-    var movies: [movie] = []
-    var movies1: [movie] = []
-    var searchBar1: [movie] = []
-    var searchBar2: [movie] = []
-    var searching: Bool = false
-    
+    var movies: [Movie] = []
+    var movies1: [Movie] = []
+    var searchBar1: [Movie] = []
+    var searchBar2: [Movie] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
         getData()
@@ -36,25 +35,25 @@ class SearchMovieViewController: UIViewController {
     
     
     func getData() {
-        let data = movie(image: "screach1", name: "Kỵ sỹ bóng đêm")
-        let data1 = movie(image: "sreach2", name: "Kẻ đánh cắp giấc mơ")
-        let data2 = movie(image: "sreach3", name: "Chúa tế những chiếc nhẫn")
-        let data3 = movie(image: "sreach4", name: "Đương đầu với thử thách")
-        let data4 = movie(image: "sreach5", name: "Kẻ hủy diệt")
-        let data5 = movie(image: "sreach6", name: "John Wick")
-        let data6 = movie(image: "sreach7", name: "Mission impossible 7")
-        let data7 = movie(image: "sreach8", name: "Aquaman and the lost kingdom")
-        let data8 = movie(image: "sreach9", name: "Đại úy Marvel 2")
-        let data9 = movie(image: "sreach10", name: "Người môi giới")
-        let data10 = movie(image: "vietnam1", name: "Thị Nở")
-        let data11 = movie(image: "vietnam2", name: "Tấm Cám Chuyện Chưa Kể")
-        let data12 = movie(image: "vietnam3", name: "Cả Một Đời Ân Oán")
-        let data13 = movie(image: "vietnam4", name: "Sinh Tử")
-        let data14 = movie(image: "vietnam5", name: "Người Phán Xử")
-        let data15 = movie(image: "vietnam6", name: "Về Nhà Đi Con")
-        let data16 = movie(image: "vietnam7", name: "Mắt Biếc")
-        let data17 = movie(image: "vietnam8", name: "Mến Gái Miền Tây")
-        let data18 = movie(image: "vietnam9", name: "Quỳnh Búp Bê")
+        let data = Movie(image: "screach1", name: "Kỵ sỹ bóng đêm")
+        let data1 = Movie(image: "sreach2", name: "Kẻ đánh cắp giấc mơ")
+        let data2 = Movie(image: "sreach3", name: "Chúa tế những chiếc nhẫn")
+        let data3 = Movie(image: "sreach4", name: "Đương đầu với thử thách")
+        let data4 = Movie(image: "sreach5", name: "Kẻ hủy diệt")
+        let data5 = Movie(image: "sreach6", name: "John Wick")
+        let data6 = Movie(image: "sreach7", name: "Mission impossible 7")
+        let data7 = Movie(image: "sreach8", name: "Aquaman and the lost kingdom")
+        let data8 = Movie(image: "sreach9", name: "Đại úy Marvel 2")
+        let data9 = Movie(image: "sreach10", name: "Người môi giới")
+        let data10 = Movie(image: "vietnam1", name: "Thị Nở")
+        let data11 = Movie(image: "vietnam2", name: "Tấm Cám Chuyện Chưa Kể")
+        let data12 = Movie(image: "vietnam3", name: "Cả Một Đời Ân Oán")
+        let data13 = Movie(image: "vietnam4", name: "Sinh Tử")
+        let data14 = Movie(image: "vietnam5", name: "Người Phán Xử")
+        let data15 = Movie(image: "vietnam6", name: "Về Nhà Đi Con")
+        let data16 = Movie(image: "vietnam7", name: "Mắt Biếc")
+        let data17 = Movie(image: "vietnam8", name: "Mến Gái Miền Tây")
+        let data18 = Movie(image: "vietnam9", name: "Quỳnh Búp Bê")
         
         
         movies.append(contentsOf: [data,data1,data2,data3,data4,data5,data6,data7,data8,data9])
@@ -102,8 +101,6 @@ extension SearchMovieViewController: UITableViewDelegate,UITableViewDataSource {
         }
         
         
-        
-  
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {

@@ -7,12 +7,12 @@
 
 import UIKit
 
-//typealias DidSelectClosure = ((_ tableIndex: Int , _ collectionIndex: Int) ->Void)
+
 
 class HomePageTableViewCell: UITableViewCell {
     @IBOutlet weak var myCollectionView: UICollectionView!
     var index: Int = 0
-    var didSelectedClosure: (( _ tableIndex: Int ,  _ collectionIndex: Int) ->Void)?
+    var didSelectedClosure: ((_ indexPath: Int) ->Void)?
     var array: [DataMovie1] = []
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,7 +25,6 @@ class HomePageTableViewCell: UITableViewCell {
         myCollectionView.delegate = self
         myCollectionView.dataSource = self
         let layout = myCollectionView.collectionViewLayout as? UICollectionViewFlowLayout
-        layout?.itemSize = CGSize(width: myCollectionView.bounds.width/3, height: 200)
         layout?.scrollDirection = .horizontal
         layout?.minimumInteritemSpacing = 10
         layout?.minimumLineSpacing = 10
@@ -50,6 +49,6 @@ extension HomePageTableViewCell: UICollectionViewDelegate, UICollectionViewDataS
         return CGSize(width: collectionView.bounds.width/3, height: 200)
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        didSelectedClosure!(index,indexPath.row)
+        didSelectedClosure!(indexPath.row)
     }
 }

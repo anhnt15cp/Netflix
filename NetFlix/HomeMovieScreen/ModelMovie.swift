@@ -11,5 +11,6 @@ struct DataMovie1 {
     var name: String = ""
     var day: String = ""
     var desceription: String = ""
+    var url: String = ""
 }
 

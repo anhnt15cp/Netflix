@@ -49,7 +49,7 @@
 		CC5D432C28F47A7F0050DE1D /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC5D432A28F47A7F0050DE1D /* MovieViewController.xib */; };
 		CC5D433328F580A70050DE1D /* Movie1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5D433128F580A70050DE1D /* Movie1ViewController.swift */; };
 		CC5D433428F580A70050DE1D /* Movie1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC5D433228F580A70050DE1D /* Movie1ViewController.xib */; };
-		CC5D433628F59F6D0050DE1D /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5D433528F59F6D0050DE1D /* File.swift */; };
+		CC5D433628F59F6D0050DE1D /* ModelMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5D433528F59F6D0050DE1D /* ModelMovie.swift */; };
 		CCC0A9BA28E2A9C4004E3A9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC0A9B928E2A9C4004E3A9B /* AppDelegate.swift */; };
 		CCC0A9BC28E2A9C4004E3A9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC0A9BB28E2A9C4004E3A9B /* SceneDelegate.swift */; };
 		CCC0A9BE28E2A9C4004E3A9B /* Netflix.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC0A9BD28E2A9C4004E3A9B /* Netflix.swift */; };
@@ -78,6 +78,8 @@
 		CCC32F9928EF1AA600DCE137 /* HomePageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCC32F9728EF1AA600DCE137 /* HomePageTableViewCell.xib */; };
 		CCC32F9C28EF1B6100DCE137 /* HomePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC32F9A28EF1B6100DCE137 /* HomePageCollectionViewCell.swift */; };
 		CCC32F9D28EF1B6100DCE137 /* HomePageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCC32F9B28EF1B6100DCE137 /* HomePageCollectionViewCell.xib */; };
+		CCDE45F728F86AC4007765C2 /* WatchMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDE45F528F86AC4007765C2 /* WatchMovieViewController.swift */; };
+		CCDE45F828F86AC4007765C2 /* WatchMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCDE45F628F86AC4007765C2 /* WatchMovieViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,7 +125,7 @@
 		CC5D432A28F47A7F0050DE1D /* MovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieViewController.xib; sourceTree = "<group>"; };
 		CC5D433128F580A70050DE1D /* Movie1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie1ViewController.swift; sourceTree = "<group>"; };
 		CC5D433228F580A70050DE1D /* Movie1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Movie1ViewController.xib; sourceTree = "<group>"; };
-		CC5D433528F59F6D0050DE1D /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		CC5D433528F59F6D0050DE1D /* ModelMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMovie.swift; sourceTree = "<group>"; };
 		CCC0A9B628E2A9C4004E3A9B /* NetFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC0A9B928E2A9C4004E3A9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCC0A9BB28E2A9C4004E3A9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,12 +150,14 @@
 		CCC0AA3128E43EEC004E3A9B /* NotificationCenterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationCenterViewController.xib; sourceTree = "<group>"; };
 		CCC0AA3428E44E7D004E3A9B /* WebHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebHelpViewController.swift; sourceTree = "<group>"; };
 		CCC0AA3528E44E7D004E3A9B /* WebHelpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebHelpViewController.xib; sourceTree = "<group>"; };
-		CCC32F9228EF19CB00DCE137 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		CCC32F9228EF19CB00DCE137 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CCC32F9328EF19CB00DCE137 /* HomePageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
 		CCC32F9628EF1AA600DCE137 /* HomePageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageTableViewCell.swift; sourceTree = "<group>"; };
 		CCC32F9728EF1AA600DCE137 /* HomePageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageTableViewCell.xib; sourceTree = "<group>"; };
 		CCC32F9A28EF1B6100DCE137 /* HomePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewCell.swift; sourceTree = "<group>"; };
 		CCC32F9B28EF1B6100DCE137 /* HomePageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomePageCollectionViewCell.xib; sourceTree = "<group>"; };
+		CCDE45F528F86AC4007765C2 /* WatchMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchMovieViewController.swift; sourceTree = "<group>"; };
+		CCDE45F628F86AC4007765C2 /* WatchMovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WatchMovieViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,6 +294,10 @@
 		CCC32F9128EF19B400DCE137 /* HomeMovieScreen */ = {
 			isa = PBXGroup;
 			children = (
+				CCDE45F528F86AC4007765C2 /* WatchMovieViewController.swift */,
+				CCDE45F628F86AC4007765C2 /* WatchMovieViewController.xib */,
+				CC5D433128F580A70050DE1D /* Movie1ViewController.swift */,
+				CC5D433228F580A70050DE1D /* Movie1ViewController.xib */,
 				CCC32F9228EF19CB00DCE137 /* HomePageViewController.swift */,
 				CCC32F9328EF19CB00DCE137 /* HomePageViewController.xib */,
 				CC35CB4A28F19042000F9FA0 /* HomePageView2TableViewCell.swift */,
@@ -304,9 +312,7 @@
 				CCC32F9728EF1AA600DCE137 /* HomePageTableViewCell.xib */,
 				CCC32F9A28EF1B6100DCE137 /* HomePageCollectionViewCell.swift */,
 				CCC32F9B28EF1B6100DCE137 /* HomePageCollectionViewCell.xib */,
-				CC5D433128F580A70050DE1D /* Movie1ViewController.swift */,
-				CC5D433228F580A70050DE1D /* Movie1ViewController.xib */,
-				CC5D433528F59F6D0050DE1D /* File.swift */,
+				CC5D433528F59F6D0050DE1D /* ModelMovie.swift */,
 			);
 			path = HomeMovieScreen;
 			sourceTree = "<group>";
@@ -386,6 +392,7 @@
 				CCC32F9D28EF1B6100DCE137 /* HomePageCollectionViewCell.xib in Resources */,
 				CC5D432028F31F380050DE1D /* NewAndHotTableViewCell.xib in Resources */,
 				CCC0A9C328E2A9C5004E3A9B /* Assets.xcassets in Resources */,
+				CCDE45F828F86AC4007765C2 /* WatchMovieViewController.xib in Resources */,
 				CC33A69428E48EB1009C7E45 /* GetPasswordViewController.xib in Resources */,
 				CC35CB4D28F19042000F9FA0 /* HomePageView2TableViewCell.xib in Resources */,
 				CCC0A9D928E2D03A004E3A9B /* LogginViewController.xib in Resources */,
@@ -423,12 +430,13 @@
 				CCC0A9BE28E2A9C4004E3A9B /* Netflix.swift in Sources */,
 				CCC0A9E328E32799004E3A9B /* WebKitViewController.swift in Sources */,
 				CCC0A9D528E2B122004E3A9B /* DataScroll.swift in Sources */,
-				CC5D433628F59F6D0050DE1D /* File.swift in Sources */,
+				CC5D433628F59F6D0050DE1D /* ModelMovie.swift in Sources */,
 				CC33A69B28E4917E009C7E45 /* ChattingViewController.swift in Sources */,
 				CC33A68B28E48A44009C7E45 /* TermOfUseViewController.swift in Sources */,
 				CCC0A9E828E3304D004E3A9B /* HelpViewController.swift in Sources */,
 				CC33A6AF28E6020A009C7E45 /* MovieTaBarController.swift in Sources */,
 				CC33A6BE28E6F457009C7E45 /* WhoWatchingViewController.swift in Sources */,
+				CCDE45F728F86AC4007765C2 /* WatchMovieViewController.swift in Sources */,
 				CCC0A9CF28E2AA80004E3A9B /* ScrollView.swift in Sources */,
 				CC16406828F16FAF00581124 /* HomePage1CollectionViewCell.swift in Sources */,
 				CC3FAD4528E9EEA000C138B6 /* FileInstallViewController.swift in Sources */,
