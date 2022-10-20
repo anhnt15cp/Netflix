@@ -13,11 +13,12 @@ class HomePageViewController: UIViewController {
     var dataMovie: [DataMovie1] = []
     var dataMovie1: [DataMovie1] = []
     var dataMovie2: [DataMovie1] = []
-    
+    var section1: [DataMovieSection] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpTableViewCell()
         getDataCell()
+        section1 = DataMovieSection.allCases
     }
     func getDataCell() {
         let data = DataMovie1(image: "screach1", name: "The Batman", day: "", desceription: "The film sees Batman, who has been fighting crime in Gotham City for two years, uncover corruption while pursuing the Riddler (Dano), a serial killer who targets Gotham's elite. Development began after Ben Affleck was cast as Batman in the DC Extended Universe (DCEU) in 2013",url: "https://phimmoichills.net/xem/batman-vach-tran-su-that-tap-full-pm93833")
@@ -82,41 +83,39 @@ class HomePageViewController: UIViewController {
 extension HomePageViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        switch tableView.numberOfSections {
-        case 0:
-            return dataMovie.count
-        case 1:
-            return dataMovie1.count
-        case 2:
-            return dataMovie2.count
-        default:
-            return 3
-        }
+        section1.count
         
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        switch section1[section] {
+        case .dataMovie1 , .dataMovie2 , .dataMovie3 :
+            return 1
+            
+        }
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.section == 0 {
+        switch section1[indexPath.section] {
+        case .dataMovie1 :
             let cell = tableView.dequeueReusableCell(withIdentifier: "HomePageTableViewCell", for: indexPath) as! HomePageTableViewCell
             cell.array = dataMovie
             
-            cell.didSelectedClosure = { collection in
-                self.moveOnMovie1ViewController(collectionIndex: collection)
-                
+            cell.didSelectedClosure = { collectionIndexPath in
+                self.moveOnMovie1ViewController(collectionIndex: collectionIndexPath)
             }
             return cell
-        }else if indexPath.section == 1 {
+        case .dataMovie2 :
             let cell1 = tableView.dequeueReusableCell(withIdentifier: "HomePageView1TableViewCell", for: indexPath) as! HomePageView1TableViewCell
             cell1.array = dataMovie1
             return cell1
-        }else {
+        case .dataMovie3 :
             let cell2 = tableView.dequeueReusableCell(withIdentifier: "HomePageView2TableViewCell", for: indexPath) as! HomePageView2TableViewCell
             cell2.array = dataMovie2
             return cell2
+            
         }
+        
+        
         
     }
     
@@ -152,7 +151,7 @@ extension HomePageViewController: UITableViewDelegate, UITableViewDataSource {
         return 30
     }
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        view.tintColor = .white
+        view.tintColor = .gray
         
     }
     

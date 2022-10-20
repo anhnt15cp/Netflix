@@ -14,3 +14,9 @@ struct DataMovie1 {
     var url: String = ""
 }
 
+enum DataMovieSection : Int , CaseIterable {
+    case dataMovie1
+    case dataMovie2
+    case dataMovie3
+    
+}
